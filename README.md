@@ -254,3 +254,56 @@ Templates ARM
 Prioridade sobre permissões: Mesmo que um usuário tenha permissões para excluir ou editar um recurso, o bloqueio impede a ação.
 Administração: Apenas usuários com permissões apropriadas (como proprietário ou administrador) podem adicionar ou remover bloqueios.
 Não substitui RBAC: Bloqueios não são um substituto para o RBAC, mas sim um complemento de segurança.
+
+# resumo-do-lab 7
+
+1. Azure Resource Manager (ARM)
+O ARM é a plataforma nativa de gerenciamento de recursos no Azure. Ele permite que os usuários implantem, atualizem e excluam recursos de forma organizada. Todos os recursos implantados via ARM fazem parte de um grupo de recursos, e a plataforma permite controle de acesso, auditoria e aplicação de políticas.
+Suporte à infraestrutura como código (IaC) por meio de arquivos JSON ARM templates.
+Permite o versionamento, reutilização e a automação de configurações.
+
+2. ARM Templates
+Arquivos JSON declarativos que descrevem os recursos a serem implantados no Azure. Eles são usados com o Azure Resource Manager para automatizar e padronizar implantações.
+Ideal para automação repetível.
+Suporta parâmetros, variáveis, condições e funções.
+Pode ser usado via Azure CLI, PowerShell ou diretamente no portal.
+
+3. Bicep
+Bicep é uma linguagem de domínio específico (DSL) que simplifica a criação de templates ARM.
+Mais legível que JSON.
+Compila para templates ARM padrão.
+Permite uso de módulos reutilizáveis.
+Ferramenta oficial da Microsoft e integrada ao Visual Studio Code.
+
+4. Azure CLI
+A Azure Command-Line Interface (CLI) é uma ferramenta de linha de comando multiplataforma para criar e gerenciar recursos do Azure.
+Permite execução rápida de comandos para criar recursos.
+Suporta scripts automatizados.
+Pode ser usada localmente ou no Azure Cloud Shell.
+
+5. Azure PowerShell
+Parecida com a Azure CLI, mas voltada para administradores que preferem o PowerShell como linguagem de script.
+Integração com o Azure Resource Manager.
+Suporte a scripts automatizados com lógica condicional complexa.
+
+6. Terraform
+Ferramenta de IaC de código aberto desenvolvida pela HashiCorp, amplamente usada no mercado.
+Suporte a múltiplas nuvens (Azure, AWS, GCP).
+Utiliza linguagem HCL (HashiCorp Configuration Language).
+Permite versionamento e reuso de código com estados mantidos localmente ou remotamente.
+
+7. Ansible
+Ferramenta de automação de configuração e provisionamento, baseada em YAML.
+Usa playbooks para descrever infraestrutura.
+Muito usada para configuração pós-implantação de recursos.
+Requer um controlador local para executar os scripts.
+
+8. Azure DevOps
+Plataforma que permite a criação de pipelines de CI/CD (Integração e Entrega Contínua).
+Integra-se com ARM Templates, Bicep, Terraform, entre outras ferramentas.
+Suporte nativo para controle de versão (Git) e testes automatizados.
+
+9. GitHub Actions for Azure
+Permite automatizar implantações usando workflows GitHub.
+Ideal para projetos hospedados no GitHub.
+Integra-se diretamente com Azure CLI, Bicep, Terraform, etc.
