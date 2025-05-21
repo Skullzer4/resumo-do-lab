@@ -307,3 +307,25 @@ Suporte nativo para controle de versão (Git) e testes automatizados.
 Permite automatizar implantações usando workflows GitHub.
 Ideal para projetos hospedados no GitHub.
 Integra-se diretamente com Azure CLI, Bicep, Terraform, etc.
+
+# resumo-do-lab 8
+
+Principais Funcionalidades do Azure Monitor
+Coleta de dados
+Métricas: Valores numéricos sobre o desempenho de recursos ao longo do tempo (ex.: uso de CPU, memória, tempo de resposta).
+Logs: Dados detalhados sobre eventos e atividades (ex.: registros de auditoria, erros, transações).
+Análise de dados
+Kusto Query Language (KQL): Linguagem usada para consultar dados nos logs.
+Dashboards personalizados: Visualizações em tempo real para métricas e logs.
+Notificações e respostas
+Alertas: Disparados com base em regras personalizadas para métricas ou logs.
+Automação: Pode iniciar ações automáticas via Logic Apps, Runbooks do Azure Automation, ou funções do Azure.
+
+Benefícios do Azure Advisor
+Proatividade: Identifica problemas antes que causem impacto.
+Economia: Reduz custos com recomendações práticas.
+Segurança reforçada: Ajuda a manter conformidade e proteção.
+Facilidade: Não exige instalação; disponível direto no portal Azure.
+Personalização: As recomendações são específicas para o seu ambiente.
+
+
