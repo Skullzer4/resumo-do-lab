@@ -167,3 +167,62 @@ Aplicar RBAC de forma granular e usar o princípio do menor privilégio
 Monitorar continuamente com ferramentas como Defender for Cloud e Sentinel
 Manter logs e auditorias ativos
 Aplicar acesso condicional e revisar periodicamente as permissões
+
+# resumo-do-lab 5
+
+1. Princípios de Otimização de Custos
+Visibilidade dos Gastos: Ter clareza sobre onde, como e por que os recursos estão sendo usados.
+Eliminação de Desperdícios: Identificar e desligar recursos não utilizados ou subutilizados.
+Ajuste de Recursos: Alocar o tamanho certo de máquinas virtuais, bancos de dados e outros serviços.
+Uso de Preços e Modelos Flexíveis: Adotar modelos de cobrança como instâncias reservadas ou preços spot para reduzir gastos.
+
+Ferramentas do Azure para Otimização
+Azure Cost Management + Billing
+Monitora e analisa o consumo de recursos.
+Gera relatórios, alertas e orçamentos.
+Ajuda na previsão de custos futuros com base no uso atual.
+
+Azure Pricing Calculator
+Permite estimar custos antes de provisionar recursos.
+Útil para simular diferentes configurações e prever gastos mensais.
+
+TCO Calculator (Calculadora de Custo Total de Propriedade)
+Compara os custos da infraestrutura local com os custos esperados no Azure.
+Avalia a viabilidade econômica de migração para a nuvem.
+
+Azure Advisor
+Oferece recomendações práticas para:
+Reduzir custos,
+Melhorar desempenho,
+Aumentar segurança e confiabilidade.
+Sinaliza recursos subutilizados ou superprovisionados.
+
+Boas Práticas de Otimização
+Dimensionamento Correto
+Reduzir ou redimensionar recursos de acordo com a necessidade real.
+Usar autoescalabilidade para lidar com variações de carga.
+
+Desligamento de Recursos em Horários de Baixa
+Automatizar o desligamento de VMs ou bancos de dados fora do horário comercial.
+
+Instâncias Reservadas
+Contratos de 1 ou 3 anos com desconto, ideais para cargas de trabalho constantes.
+
+Utilização de Tags (Marcas)
+Ajudam a organizar e rastrear custos por projeto, departamento ou cliente.
+
+Uso de Contêineres e Serviços Serverless
+Soluções como Azure Functions e Azure Container Instances cobram apenas pelo uso efetivo, reduzindo custos ociosos.
+
+Escolha Estratégica da Região
+Custos variam entre regiões do Azure. Algumas regiões são mais baratas para determinados serviços.
+
+4. Exemplos Práticos
+Desligar VMs não utilizadas à noite economiza em ambientes de desenvolvimento e teste.
+Reservar instâncias de SQL Database com uso constante pode gerar até 40% de economia.
+Redimensionar discos e armazenamento evita pagar por capacidade não utilizada.
+
+Monitoramento e Governança
+Criação de políticas de governança para limitar uso excessivo.
+Definir orçamentos e alertas de gastos por grupo de recursos.
+Utilizar Azure Policy para controlar padrões de uso e aplicar regras de otimização automaticamente.
