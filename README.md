@@ -226,3 +226,31 @@ Monitoramento e Governança
 Criação de políticas de governança para limitar uso excessivo.
 Definir orçamentos e alertas de gastos por grupo de recursos.
 Utilizar Azure Policy para controlar padrões de uso e aplicar regras de otimização automaticamente.
+
+# resumo-do-lab 6
+
+Tipos de Bloqueios
+Existem dois tipos de bloqueios no Azure:
+ReadOnly (Somente leitura)
+Impede qualquer modificação no recurso.
+Ainda é possível visualizar os dados, mas não é permitido fazer alterações nem realizar operações de gerenciamento.
+Nenhuma alteração via portal, PowerShell, CLI ou ARM é permitida.
+Delete (Exclusão)
+Permite a modificação do recurso, mas impede que ele seja excluído.
+Ideal para recursos que ainda estão em desenvolvimento ou uso, mas não devem ser removidos por engano.
+
+Onde e Como Aplicar um Bloqueio
+Os bloqueios podem ser aplicados em diferentes níveis:
+Nível de Recurso: Protege um recurso individual.
+Nível de Grupo de Recursos: Todos os recursos dentro do grupo herdariam o bloqueio.
+Nível de Assinatura: Afeta todos os recursos e grupos de recursos da assinatura.
+Você pode aplicar bloqueios pelo:
+Portal do Azure
+Azure PowerShell
+Azure CLI
+Templates ARM
+
+
+Prioridade sobre permissões: Mesmo que um usuário tenha permissões para excluir ou editar um recurso, o bloqueio impede a ação.
+Administração: Apenas usuários com permissões apropriadas (como proprietário ou administrador) podem adicionar ou remover bloqueios.
+Não substitui RBAC: Bloqueios não são um substituto para o RBAC, mas sim um complemento de segurança.
